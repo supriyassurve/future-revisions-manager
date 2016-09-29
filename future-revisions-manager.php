@@ -1,14 +1,14 @@
 <?php
 /**
  * @package Future_Revisions_Manager
- * @version 1.0
+ * @version 1.1.0
  */
 /*
 Plugin Name: Future Revisions Manager
 Plugin URI: http://wordpress.org/plugins/future-revisions-manager/
 Description: This plugin will help you to create a copy of published post to restrict the direct submit for posts/ pages/ any other post type.
 Author: Supriya Surve
-Version: 1.0
+Version: 1.1.0
 Author URI: http://supriyasurve.com/
 
   Copyright 2016 Supriya Surve.
@@ -59,7 +59,7 @@ class FutureRevisionsManager {
    * Add options page
    */
   public function add_frm_plugin_page() {
-      // This page will be under "Settings"
+    /* This page will be under "Settings" */
     add_options_page(
       'Settings Admin', 
       'Future Revision Manager Settings', 
@@ -73,7 +73,7 @@ class FutureRevisionsManager {
    * Options page callback
    */
   public function create_frm_admin_page() {
-      // Set class property
+    /* Set class property */
     $this->options = get_option( 'frm_options' );
     $this->all_post_types = get_post_types();
 
@@ -195,8 +195,6 @@ class FutureRevisionsManager {
         wp_die( $msg, __('Post approved and published', 'slates'), array( 'response' => 0 ) );
       }
     }
-  }
-  
+  }  
 }
-
 $future_revisions_manager = new FutureRevisionsManager();

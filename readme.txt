@@ -1,9 +1,9 @@
 === Plugin Name ===
 Contributors: SupriyaSurve
-Tags: revision, access, permissions, cms, user, groups, members, admin, pages, posts, page, Post, post_types
+Tags: revision, access, permissions, user, pages, posts, page, Post, post_types
 Requires at least: 4.3
 Tested up to: 4.3
-Stable Tag: 1.0
+Stable Tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,3 +14,13 @@ Published content manager which creates a copy of updated content and keeps the 
 1. Upload the plugin folder to your /wp-content/plugins/ folder
 2. Install as a regular WordPress plugin.
 3. Done.
+
+== Screenshots ==
+
+1. The Settings page menu.
+2. The Settings page interface.
+
+== Changelog ==
+
+= 1.1.0 - 29 September 2016 =
+* Added: Settings page to approve post types based the requirement of admin user.
