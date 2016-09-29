@@ -122,7 +122,7 @@ class FutureRevisionsManager {
   public function fields_callback( $input ) {
     $options_fields = '<table width="100%">';
     foreach ($this->all_post_types as $key => $post_type) {   
-      $field_name = "frm_options[ $post_type ]";
+      $field_name = "frm_options[$post_type]";
       $options_fields .=  '<tr>
       <td width="190px"><label for="'.$post_type.'">'. ucwords( $post_type ) .'</label></td>
       <td><input type="checkbox" id="'.$post_type.'" name="'.$field_name.'"'; 
